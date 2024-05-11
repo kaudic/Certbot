@@ -1,0 +1,8 @@
+FROM certbot/certbot
+
+# Expose ports 80 and/or 443 if needed
+EXPOSE 80
+EXPOSE 443
+
+# Set the entrypoint to run Certbot with the desired command
+ENTRYPOINT ["certbot"]
